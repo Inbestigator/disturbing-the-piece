@@ -17,7 +17,7 @@ const videos = [
 function App() {
   return (
     <>
-      <section className="relative min-h-dvh lg:grid not-lg:justify-center items-center grid-cols-[1fr_1fr_1fr] max-w-5xl mx-auto flex p-4">
+      <section className="relative min-h-screen lg:grid not-lg:justify-center items-center grid-cols-[1fr_1fr_1fr] max-w-5xl mx-auto flex p-4 overflow-hidden">
         <a
           href="https://instagram.com/basedprion"
           target="_blank"
@@ -29,11 +29,11 @@ function App() {
         <a
           href="https://youtube.com/@disturbingthepiecepod"
           target="_blank"
-          className="z-10 not-lg:-translate-y-1/2 not-lg:scale-80"
+          className="z-10 not-lg:-translate-y-1/3 not-lg:scale-80"
         >
           <img
             src={logoImg}
-            className="max-w-xl not-lg:sm:aspect-video object-[0_65%] object-cover overflow-hidden max-h-[50dvh] active:scale-98 hover:scale-102 transition-all ease-out"
+            className="max-w-xl not-lg:sm:aspect-video object-[0_65%] object-cover overflow-hidden max-h-[50vh] active:scale-98 hover:scale-102 transition-all ease-out"
             alt="Disturbing the Piece logo"
             fetchPriority="high"
           />
