@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "checks": "bun tsc --noEmit && bun biome check --write",
-    "preview": "vite preview"
+    "preview": "bun run build && wrangler dev",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@biomejs/biome": "^2.4.10",
+    "@cloudflare/vite-plugin": "^1.31.0",
     "@rolldown/plugin-babel": "^0.2.2",
     "@types/babel__core": "^7.20.5",
     "@types/node": "^25.5.2",
@@ -26,6 +28,7 @@
     "babel-plugin-react-compiler": "^1.0.0",
     "globals": "^17.4.0",
     "typescript": "~6.0.2",
-    "vite": "^8.0.4"
+    "vite": "^8.0.4",
+    "wrangler": "^4.80.0"
   }
 }
