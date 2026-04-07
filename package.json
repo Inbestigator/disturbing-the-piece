@@ -28,7 +28,7 @@
     "babel-plugin-react-compiler": "^1.0.0",
     "globals": "^17.4.0",
     "typescript": "~6.0.2",
-    "vite": "^8.0.4",
+    "vite": "^8.0.5",
     "wrangler": "^4.80.0"
   }
 }
